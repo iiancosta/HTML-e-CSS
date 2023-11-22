@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios no Html</title>
+</head>
+<body>
+    <h1>Colocando Áudio</h1>
+    <p>Nesse site, eu vejo as diferentes maneiras de colocar áudio no html.</p>
+    
+    <h2>Maneira Simples</h2>
+    <audio src="Old Blue - Chris Haugen.mp3" controls>Uau</audio>
+    <p>Usasse as tags: <strong>audio e controls</strong>.</p>
+
+    <h2>Maneira Detalhada</h2>
+    <audio preload="none" autoplay controls>
+        <source src="Old Blue - Chris Haugen.mp3" type="audio/mpeg">
+        <source src="Old Blue - Chris Haugen.ogg" type="audio/ogg">
+        <source src="Old Blue - Chris Haugen.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz áudio. <a href="Old Blue - Chris Haugen.mp3" download="Old Blue - Chris Haugen.mp3">Baixe a música por aqui</a>.</p>
+    </audio>
+    <p>Tags usadas:</p>
+    <ul>
+        <li><strong>audio</strong></li>
+        <ol>
+            <li><strong>preload</strong> serve para informar ao navegador, quanto o site irá carregar do áudio.</li>
+            <ul>
+                <li><strong>auto</strong></li>
+                <dd>Carrega o arquivo por completo. Obs: Se o áudio for grande deixará o site lento.</dd>
+                <li><strong>metadata</strong></li>
+                <dd>Carrega apenas o tempo, tamanho e informações de direito.</dd>
+                <li><strong>none</strong></li>
+                <dd>Não carrega informações do áudio até que seja tocado o play.</dd>
+            </ul>
+            <li><strong>autoplay</strong> carrega o site e toca o áudio automaticamente.</li>
+            <li><strong>controls</strong> faz com que apareça a interface de interação com o áudio.</li>
+            <li><strong>loop</strong> faz a música se repetir.</li>
+        </ol>
+        <li><strong>source</strong></li>
+        <dd>Chama o arquivo.</dd>
+        <ol>
+            <li><strong>src</strong> chama o arquivo.</li>
+            <li><strong>type</strong> informa a extensão do áudio.</li>
+            <ul>
+                <li><strong>mp3</strong></li>
+                <li><strong>oog</strong></li>
+                <li><strong>wav</strong></li>
+                <dd>É uma extensão de alta qualidade e por isso pesada para se colocar em site.</dd>
+            </ul>
+        </ol>
+        <li><strong>download</strong></li>
+        <dd>Em caso do navegador não reconhecer as extensões do Source, recomenda-se disponibilizar o áudio para baixar.</dd>
+    </ul>  
+</body>
+</html>

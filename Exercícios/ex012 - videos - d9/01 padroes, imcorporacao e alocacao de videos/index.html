@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos no HTML</title>
+</head>
+<body>
+    <h1>Vídeos no HTML</h1>
+    <p>Nesse capítulo aprendo como mudar o formato de um vídeo com a plataforma HandBrake, como colocar vídeos incorporados do Youtube e do Vimeo.</p>
+    <h2>Onde baixar vídeos?</h2>
+    <p>No <strong>pexels</strong>, para que não tenha problemas com direitos autorais.</p>
+    <p>Recomenda-se baixar vídeos com menos qualidade para não deixar seu site lendo.</p>
+    <h2>Padrões de Vídeos</h2>
+    <ul>
+        <li><strong>mp4 / m4v</strong></li>
+        <li><strong>webm</strong></li>
+        <dd>Qualidade e Tamanho baixíssimos.</dd>
+        <li><strong>Ogg / Ogv</strong></li>
+    </ul>
+
+    <h1>Colocando Vídeos Locais no HTML</h1>
+    <video width="200" poster="imagens/cozina.jpg" controls autoplay>
+        <source src="midia/cozine.m4v" type="video/mp4">
+        <source src="midia/Cozine.webm" type="video/webm">
+        <source src="midia/Cozine.mp4" type="video/mp4">
+        <source src="midia/cozine.ogv" type="video/ogg">
+        <p>Seu navegador infelizmente não pode reproduzir os vídeos.</p>
+    </video>
+    <h1>Incororando Vídeos no HTML</h1>
+    <h2>Vídeo do Youtubiu</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Vídeo do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/236447054?h=21324ff421" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

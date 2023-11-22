@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+.asdf {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    /*font: italic bold 1.5em ' Work Sans', sans-serif;*/    
+}
+.inicio {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.monospace {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+.cursive {
+    text-align: right;
+    font-family: Brush Script MT, cursive;
+    font-size: 2em;
+}
+.display {
+    font-family: 'Monoton', cursive;
+    font-size: 1.5em;
+    text-indent: 30px;
+    text-align: justify;
+    
+
+}
+.Sans-Serif {
+    font-family: Helvetica, Verdana, sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+}
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    text-align: justify;
+}

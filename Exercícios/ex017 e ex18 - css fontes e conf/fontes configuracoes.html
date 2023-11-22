@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="asdf">
+        <h1 style="font-size: 1.2em;">Peso, Estilo e Shorthand font (abreviação de declaração)</h1>
+        <ul>
+            <li>Tipos de Estilização de Fontes:</li>
+            <ul>
+                <li><code><u>font-family</u>: 'Work Sans', sans-serif;</code></li>
+                <dd>- fontes que serão usadas.</dd>
+                <li><code><u>font-size</u>: 1.5em;</code></li>
+                <dd>- tamanho da fonte.</dd>
+                <li><code><u>font-weight</u>: bolder;</code></li>
+                <dd>- expessura da fonte.</dd>
+                <li><code><u>font-style</u>: italic;</code></li>
+                <li><code><u>text-decoration</u>: underline;</code></li>
+                <li><code><u>text-align</u>: justify;</code></li>
+                <dd>- justify, center, left e right</dd>
+                <li><code><u>text-indent</u>: 30px;</code></li>
+                <dd>- dá o espaço inicial de cada parágrafo.</dd>
+            </ul>
+            <p></p>
+            <li>SHORTHAND:</li>
+            <ul>
+                <li><code>font: italic bold 1.5em ' Work Sans', sans-serif;</code></li>
+            </ul>
+        </ul>
+        <p>font-style -> font-weight -> font-size -> font-family </p>
+    </div>
+
+    <div class="inicio">
+        <h1>Tamanho das Fontes</h1>
+        <p><strong>Medidas Absolutas:</strong> cm (centímetro), mm (milímetro), in (polegada), <strong>px (pixel)</strong>, pt (ponto), pc (paica). </p>
+        <p><strong>Medidas Relativas:</strong></p>
+        <ul>
+            <li><strong>em:</strong></li>
+            <dd><strong>Medida relativa ao tamanho atual da fonte. Altura M.</strong></dd>
+            <li>ex:</li>
+            <dd>Medida relativa a Altura X da fonte. Altura X.</dd>
+            <li>rem</li>
+            <dd>Medida relativa ao tamanho atual da fonte. Altura M do ROOT. Fonte que está configurada no Body.</dd>
+            <li>vw</li>
+            <dd>Largura da View Port (Largura da Tela). View Width. </dd>
+            <li>vh</li>
+            <dd>Altura da View Port (Altura da Tela). View Height.</dd>
+            <li>%</li>
+        </ul>
+        <p>Recomenda-se utilizar as unidades de medida <strong>px</strong> e <strong>em</strong> para tamanho de fontes. <strong>Use apenas esses para tamanho de fontes.</strong></p>
+        <p>16px - é o tamanho da fonte = 1em</p>
+        <p>1em - é o tamanho da fonte.</p>
+
+        <h1>Família das Fontes</h1>
+        <p><strong>Pesquise no google: "CSS web safe font combinations" ou <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">https://www.w3schools.com/cssref/css_websafe_fonts.asp</a></strong></p>
+        <p>Nesse site você poderá acessar uma lista de fontes que combinam juntas. Isso ajudara a escolher as fontes nos seus projetos.</p>
+    </div>
+
+    <div class="monospace">
+        <h2>Fontes MONOESPAÇADAS - Monospace</h2>
+        <p>Essa é uma das categorias de fontes que vieram derivadas das duas categorias que vimos anteriormente, por isso existem fontes monoespaçadas <strong>com e sem serifas</strong>. A principal diferença desse tipo de fonte é o espaço horizontal (largura) ocupado por cada letra. Na maioria das fontes, a letra i ocupa muito menos espaço lateral do que a letra M, não é? Não para as fontes monoespaçadas. Elas possuem a largura para todas as letras.</p>
+        <p>A principal <strong>vantagem no uso desse tipo de fonte é facilitar ao máximo a leitura das palavras</strong>, principalmente aquelas que requerem que você as reproduza. Usamos muito esse tipo de fonte para representar comandos de programação de computadores. Por isso, nós também costumamos chamá-las de fonte de terminal ou fonte de console.</p>
+    </div>
+
+    <div class="cursive">
+        <h2>Fontes Script - Cursive</h2>
+        <p>Também chamadas de fontes <strong>handwriting , são aquelas que tentam imitar a escrita humana</strong>. Seu uso deve ser bem controlado e jamais será aplicado a textos muito longos, pois causam cansaço visual e tornam-se difíceis de ler, como já provamos anteriormente no início do capítulo, dentro do item “As fontes falam”.</p>
+    </div>
+
+    <div class="display">
+        <h2>Fontes Display</h2>
+        <p>Toda fonte que foge completamente das definições feitas pelas classificações acima são consideradas fontes display. São fontes com bastante efeitos visuais, enfeitadas e até mesmo curiosas. Também são chamadas de fontes comemorativas e algumas delas sequer representam letras, podendo ser desenhos de animais, objetos, pessoas, personagens de quadrinhos, etc.</p>
+        <p>Essas fontes também são para criar títulos em destaque e devem ser evitadas para textos médios ou longos.</p>
+    </div>
+
+    <div class="Sans-Serif">
+        <h2>Fontes não Serifadas - Sans-Serif</h2>
+        <p>São ótimas para a exibição em telas/monitores pois transmitem a sensação de limpeza, clareza e organização.</p>
+    </div>
+
+    <div class="serif">
+        <h2>Fontes SERIFADAS - Serif</h2>
+        <p>Atualmente, não usamos fontes serifadas para apresentar textos longos na Web pois as tendências atuais nos levam a usar fontes um pouco mais leves visualmente. Porém, as fontes serifadas são bastante usadas em títulos, pois acabam chamando mais atenção por conta das suas características.</p>
+    </div>
+
+</body>
+</html>

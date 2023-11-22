@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhando o PDF</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Nesse site, desejo treinar a respeito de como fazer uma imagem mudar de dimensão conforme a janela do navegador é alterada.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="bebe_ian-300x300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="bebe_ian-700x700.png" type="image/png">
+        <img src="bebe_ian-1000x1000.png" alt="Bebe_Ian 1000x1000">
+    </picture>
+
+    <h1>Áudio</h1>
+    <p>Abaixo eu testei como colocar um áudio no meu site. No vídeo, provavelmente irei poder ver bem mais detalhes a repeito do melhor a se fazer quando procurar colocar um áudio no site.</p>
+    <audio preload="auto" controls autoplay loop>
+        <source src="../03_audio/Old Blue - Chris Haugen.mp3" type="audio/mpeg">       
+    </audio>
+
+    <h1>Vídeos</h1>
+    <p>Abaixo estou adicionando vídeos no html de forma simples. No vídeo do youtube irei conseguir aprender mais detalhes.</p>
+    <h2>Vídeo Baixado</h2>
+    <video width="300" src="../04_videos/cozine.mp4" controls autoplay></video>
+    <h2>Vídeo do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Vídeo do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/250148748?h=3ece212ace" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/250148748">Always Above Us</a> from <a href="https://vimeo.com/sherpascinema">Sherpas Cinema</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+
+</body>
+</html>
